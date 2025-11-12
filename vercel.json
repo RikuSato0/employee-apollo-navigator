@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/proxy",
+      "methods": ["POST"],
+      "dest": "/api/proxy.cjs"
+    }
+  ],
+  "functions": {
+    "api/**/*.cjs": {
+      "runtime": "@vercel/node@3.0.0"
+    }
+  }
+}
